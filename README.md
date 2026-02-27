@@ -26,8 +26,6 @@
 - **Среда разработки:** Microsoft Visual Studio 2022
 - **Дополнительные библиотеки:** 
   - System.Windows.Forms
-  - System.Drawing
-  - System.IO
 
 ## Инструкция по сборке и запуску
 
