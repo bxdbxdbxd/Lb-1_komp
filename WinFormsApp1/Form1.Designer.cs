@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
-            файлToolStripMenuItem = new ToolStripMenuItem();
-            создатьToolStripMenuItem = new ToolStripMenuItem();
-            открытьToolStripMenuItem = new ToolStripMenuItem();
-            сохранитьToolStripMenuItem = new ToolStripMenuItem();
-            сохранитьКакToolStripMenuItem = new ToolStripMenuItem();
-            выходToolStripMenuItem = new ToolStripMenuItem();
-            правкаToolStripMenuItem = new ToolStripMenuItem();
-            отменитьToolStripMenuItem = new ToolStripMenuItem();
-            повторитьToolStripMenuItem = new ToolStripMenuItem();
-            вырезатьToolStripMenuItem = new ToolStripMenuItem();
-            копироватьToolStripMenuItem = new ToolStripMenuItem();
-            вставитьToolStripMenuItem = new ToolStripMenuItem();
-            удалитьToolStripMenuItem = new ToolStripMenuItem();
-            выделитьВсёToolStripMenuItem = new ToolStripMenuItem();
+            File = new ToolStripMenuItem();
+            Create = new ToolStripMenuItem();
+            Open = new ToolStripMenuItem();
+            Save = new ToolStripMenuItem();
+            Save_as = new ToolStripMenuItem();
+            Exit = new ToolStripMenuItem();
+            Edit = new ToolStripMenuItem();
+            Undo = new ToolStripMenuItem();
+            Redo = new ToolStripMenuItem();
+            Cut = new ToolStripMenuItem();
+            Copy = new ToolStripMenuItem();
+            Paste = new ToolStripMenuItem();
+            Delete = new ToolStripMenuItem();
+            Select_all = new ToolStripMenuItem();
             текстToolStripMenuItem = new ToolStripMenuItem();
             постановкаЗадачиToolStripMenuItem = new ToolStripMenuItem();
             грамматикаToolStripMenuItem = new ToolStripMenuItem();
@@ -53,9 +53,9 @@
             списокЛитературыToolStripMenuItem = new ToolStripMenuItem();
             исходныйКодПрограммыToolStripMenuItem = new ToolStripMenuItem();
             пускToolStripMenuItem = new ToolStripMenuItem();
-            справкаToolStripMenuItem = new ToolStripMenuItem();
-            вызовСправкиToolStripMenuItem = new ToolStripMenuItem();
-            оПрограммеToolStripMenuItem = new ToolStripMenuItem();
+            Help_me = new ToolStripMenuItem();
+            Call_help = new ToolStripMenuItem();
+            About = new ToolStripMenuItem();
             textBox2 = new TextBox();
             toolStrip1 = new ToolStrip();
             toolStripButton1 = new ToolStripButton();
@@ -76,109 +76,110 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem, правкаToolStripMenuItem, текстToolStripMenuItem, пускToolStripMenuItem, справкаToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { File, Edit, текстToolStripMenuItem, пускToolStripMenuItem, Help_me });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(891, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
-            // файлToolStripMenuItem
+            // File
             // 
-            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { создатьToolStripMenuItem, открытьToolStripMenuItem, сохранитьToolStripMenuItem, сохранитьКакToolStripMenuItem, выходToolStripMenuItem });
-            файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(59, 24);
-            файлToolStripMenuItem.Text = "Файл";
+            File.DropDownItems.AddRange(new ToolStripItem[] { Create, Open, Save, Save_as, Exit });
+            File.Name = "File";
+            File.Size = new Size(59, 24);
+            File.Text = "Файл";
             // 
-            // создатьToolStripMenuItem
+            // Create
             // 
-            создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
-            создатьToolStripMenuItem.Size = new Size(192, 26);
-            создатьToolStripMenuItem.Text = "Создать";
-            создатьToolStripMenuItem.Click += Click_button_create;
+            Create.Name = "Create";
+            Create.Size = new Size(192, 26);
+            Create.Text = "Создать";
+            Create.Click += Click_button_create;
             // 
-            // открытьToolStripMenuItem
+            // Open
             // 
-            открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            открытьToolStripMenuItem.Size = new Size(192, 26);
-            открытьToolStripMenuItem.Text = "Открыть";
-            открытьToolStripMenuItem.Click += Click_button_open;
+            Open.Name = "Open";
+            Open.Size = new Size(192, 26);
+            Open.Text = "Открыть";
+            Open.Click += Click_button_open;
             // 
-            // сохранитьToolStripMenuItem
+            // Save
             // 
-            сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            сохранитьToolStripMenuItem.Size = new Size(192, 26);
-            сохранитьToolStripMenuItem.Text = "Сохранить";
-            сохранитьToolStripMenuItem.Click += Click_burron_save;
+            Save.Name = "Save";
+            Save.Size = new Size(192, 26);
+            Save.Text = "Сохранить";
+            Save.Click += Click_burron_save;
             // 
-            // сохранитьКакToolStripMenuItem
+            // Save_as
             // 
-            сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            сохранитьКакToolStripMenuItem.Size = new Size(192, 26);
-            сохранитьКакToolStripMenuItem.Text = "Сохранить как";
-            сохранитьКакToolStripMenuItem.Click += Click_button_save_as;
+            Save_as.Name = "Save_as";
+            Save_as.Size = new Size(192, 26);
+            Save_as.Text = "Сохранить как";
+            Save_as.Click += Click_button_save_as;
             // 
-            // выходToolStripMenuItem
+            // Exit
             // 
-            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            выходToolStripMenuItem.Size = new Size(192, 26);
-            выходToolStripMenuItem.Text = "Выход";
+            Exit.Name = "Exit";
+            Exit.Size = new Size(192, 26);
+            Exit.Text = "Выход";
+            Exit.Click += Button_exit;
             // 
-            // правкаToolStripMenuItem
+            // Edit
             // 
-            правкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { отменитьToolStripMenuItem, повторитьToolStripMenuItem, вырезатьToolStripMenuItem, копироватьToolStripMenuItem, вставитьToolStripMenuItem, удалитьToolStripMenuItem, выделитьВсёToolStripMenuItem });
-            правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
-            правкаToolStripMenuItem.Size = new Size(74, 24);
-            правкаToolStripMenuItem.Text = "Правка";
+            Edit.DropDownItems.AddRange(new ToolStripItem[] { Undo, Redo, Cut, Copy, Paste, Delete, Select_all });
+            Edit.Name = "Edit";
+            Edit.Size = new Size(74, 24);
+            Edit.Text = "Правка";
             // 
-            // отменитьToolStripMenuItem
+            // Undo
             // 
-            отменитьToolStripMenuItem.Name = "отменитьToolStripMenuItem";
-            отменитьToolStripMenuItem.Size = new Size(186, 26);
-            отменитьToolStripMenuItem.Text = "Отменить";
-            отменитьToolStripMenuItem.Click += Undo_Click;
+            Undo.Name = "Undo";
+            Undo.Size = new Size(224, 26);
+            Undo.Text = "Отменить";
+            Undo.Click += Undo_Click;
             // 
-            // повторитьToolStripMenuItem
+            // Redo
             // 
-            повторитьToolStripMenuItem.Name = "повторитьToolStripMenuItem";
-            повторитьToolStripMenuItem.Size = new Size(186, 26);
-            повторитьToolStripMenuItem.Text = "Повторить";
-            повторитьToolStripMenuItem.Click += Redo_Click;
+            Redo.Name = "Redo";
+            Redo.Size = new Size(224, 26);
+            Redo.Text = "Повторить";
+            Redo.Click += Redo_Click;
             // 
-            // вырезатьToolStripMenuItem
+            // Cut
             // 
-            вырезатьToolStripMenuItem.Name = "вырезатьToolStripMenuItem";
-            вырезатьToolStripMenuItem.Size = new Size(186, 26);
-            вырезатьToolStripMenuItem.Text = "Вырезать";
-            вырезатьToolStripMenuItem.Click += Cut_Click;
+            Cut.Name = "Cut";
+            Cut.Size = new Size(224, 26);
+            Cut.Text = "Вырезать";
+            Cut.Click += Cut_Click;
             // 
-            // копироватьToolStripMenuItem
+            // Copy
             // 
-            копироватьToolStripMenuItem.Name = "копироватьToolStripMenuItem";
-            копироватьToolStripMenuItem.Size = new Size(186, 26);
-            копироватьToolStripMenuItem.Text = "Копировать";
-            копироватьToolStripMenuItem.Click += Copy_Click;
+            Copy.Name = "Copy";
+            Copy.Size = new Size(224, 26);
+            Copy.Text = "Копировать";
+            Copy.Click += Copy_Click;
             // 
-            // вставитьToolStripMenuItem
+            // Paste
             // 
-            вставитьToolStripMenuItem.Name = "вставитьToolStripMenuItem";
-            вставитьToolStripMenuItem.Size = new Size(186, 26);
-            вставитьToolStripMenuItem.Text = "Вставить";
-            вставитьToolStripMenuItem.Click += Paste_Click;
+            Paste.Name = "Paste";
+            Paste.Size = new Size(224, 26);
+            Paste.Text = "Вставить";
+            Paste.Click += Paste_Click;
             // 
-            // удалитьToolStripMenuItem
+            // Delete
             // 
-            удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            удалитьToolStripMenuItem.Size = new Size(186, 26);
-            удалитьToolStripMenuItem.Text = "Удалить";
-            удалитьToolStripMenuItem.Click += Delete_Click;
+            Delete.Name = "Delete";
+            Delete.Size = new Size(224, 26);
+            Delete.Text = "Удалить";
+            Delete.Click += Delete_Click;
             // 
-            // выделитьВсёToolStripMenuItem
+            // Select_all
             // 
-            выделитьВсёToolStripMenuItem.Name = "выделитьВсёToolStripMenuItem";
-            выделитьВсёToolStripMenuItem.Size = new Size(186, 26);
-            выделитьВсёToolStripMenuItem.Text = "Выделить всё";
-            выделитьВсёToolStripMenuItem.Click += SelectAll_Click;
+            Select_all.Name = "Select_all";
+            Select_all.Size = new Size(224, 26);
+            Select_all.Text = "Выделить всё";
+            Select_all.Click += SelectAll_Click;
             // 
             // текстToolStripMenuItem
             // 
@@ -235,26 +236,26 @@
             пускToolStripMenuItem.Size = new Size(55, 24);
             пускToolStripMenuItem.Text = "Пуск";
             // 
-            // справкаToolStripMenuItem
+            // Help_me
             // 
-            справкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { вызовСправкиToolStripMenuItem, оПрограммеToolStripMenuItem });
-            справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            справкаToolStripMenuItem.Size = new Size(81, 24);
-            справкаToolStripMenuItem.Text = "Справка";
+            Help_me.DropDownItems.AddRange(new ToolStripItem[] { Call_help, About });
+            Help_me.Name = "Help_me";
+            Help_me.Size = new Size(81, 24);
+            Help_me.Text = "Справка";
             // 
-            // вызовСправкиToolStripMenuItem
+            // Call_help
             // 
-            вызовСправкиToolStripMenuItem.Name = "вызовСправкиToolStripMenuItem";
-            вызовСправкиToolStripMenuItem.Size = new Size(197, 26);
-            вызовСправкиToolStripMenuItem.Text = "Вызов справки";
-            вызовСправкиToolStripMenuItem.Click += Help;
+            Call_help.Name = "Call_help";
+            Call_help.Size = new Size(224, 26);
+            Call_help.Text = "Вызов справки";
+            Call_help.Click += Help;
             // 
-            // оПрограммеToolStripMenuItem
+            // About
             // 
-            оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            оПрограммеToolStripMenuItem.Size = new Size(197, 26);
-            оПрограммеToolStripMenuItem.Text = "О программе";
-            оПрограммеToolStripMenuItem.Click += About_proga;
+            About.Name = "About";
+            About.Size = new Size(224, 26);
+            About.Text = "О программе";
+            About.Click += About_proga;
             // 
             // textBox2
             // 
@@ -391,7 +392,7 @@
             MainMenuStrip = menuStrip1;
             MinimumSize = new Size(800, 800);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Редактор";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
@@ -404,20 +405,20 @@
 
         #endregion
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem создатьToolStripMenuItem;
-        private ToolStripMenuItem открытьToolStripMenuItem;
-        private ToolStripMenuItem сохранитьToolStripMenuItem;
-        private ToolStripMenuItem сохранитьКакToolStripMenuItem;
-        private ToolStripMenuItem выходToolStripMenuItem;
-        private ToolStripMenuItem правкаToolStripMenuItem;
-        private ToolStripMenuItem отменитьToolStripMenuItem;
-        private ToolStripMenuItem повторитьToolStripMenuItem;
-        private ToolStripMenuItem вырезатьToolStripMenuItem;
-        private ToolStripMenuItem копироватьToolStripMenuItem;
-        private ToolStripMenuItem вставитьToolStripMenuItem;
-        private ToolStripMenuItem удалитьToolStripMenuItem;
-        private ToolStripMenuItem выделитьВсёToolStripMenuItem;
+        private ToolStripMenuItem File;
+        private ToolStripMenuItem Create;
+        private ToolStripMenuItem Open;
+        private ToolStripMenuItem Save;
+        private ToolStripMenuItem Save_as;
+        private ToolStripMenuItem Exit;
+        private ToolStripMenuItem Edit;
+        private ToolStripMenuItem Undo;
+        private ToolStripMenuItem Redo;
+        private ToolStripMenuItem Cut;
+        private ToolStripMenuItem Copy;
+        private ToolStripMenuItem Paste;
+        private ToolStripMenuItem Delete;
+        private ToolStripMenuItem Select_all;
         private ToolStripMenuItem текстToolStripMenuItem;
         private ToolStripMenuItem постановкаЗадачиToolStripMenuItem;
         private ToolStripMenuItem грамматикаToolStripMenuItem;
@@ -427,10 +428,10 @@
         private ToolStripMenuItem списокЛитературыToolStripMenuItem;
         private ToolStripMenuItem исходныйКодПрограммыToolStripMenuItem;
         private ToolStripMenuItem пускToolStripMenuItem;
-        private ToolStripMenuItem справкаToolStripMenuItem;
+        private ToolStripMenuItem Help_me;
         private TextBox textBox2;
-        private ToolStripMenuItem вызовСправкиToolStripMenuItem;
-        private ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private ToolStripMenuItem Call_help;
+        private ToolStripMenuItem About;
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButton1;
         private ToolStripButton toolStripButton2;
